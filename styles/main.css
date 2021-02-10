@@ -1,2 +1,12 @@
-@import url("/styles/accueil.css");
-@import url("/styles/discographie.css");
+@import url("accueil.css");
+@import url("discographie.css");
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
