@@ -7,11 +7,11 @@ main {
 
 @media screen and (orientation:landscape) {
 
-    main {
+    .main-accueil {
         background-color: red;
     }
 
-    main:before {
+    .main-accueil:before {
         content: "";
 	    float: left;
         padding-top: 56.25%;
@@ -52,8 +52,8 @@ h1 {
 }
 
 .more {
-    background-color: red;
-    color: white;
+    background-color:#F8F8F8;
+    color: #BF0000;
     border-style: none;
     position: relative;
     width: 50%;
