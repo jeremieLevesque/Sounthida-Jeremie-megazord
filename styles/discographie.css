@@ -33,3 +33,13 @@ picture img {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0, 0, 138, 1));
     opacity: 45%;
 }
+
+.more {
+    background-color: red;
+    color: white;
+    border-style: none;
+    position: relative;
+    width: 50%;
+    height: 20%;
+    border-radius: 5px;
+}
