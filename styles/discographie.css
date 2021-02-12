@@ -41,11 +41,13 @@ picture img {
 }
 
 .more {
-    background-color: red;
-    color: white;
+    background-color:#F8F8F8;
+    color: #BF0000;
     border-style: none;
     position: relative;
-    width: 50%;
+    width: 25%;
     height: 20%;
     border-radius: 5px;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.3em;
 }
