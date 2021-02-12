@@ -1,21 +1,36 @@
 @import url("accueil.css");
 @import url("discographie.css");
 
-@font-face {
-    font-family: dark world;
-    src: url(typo/Dark World.ttf);
-}
+
+:root{ --bg: ;}
+:root{ --text ;}
+:root{ --primary ;}
+:root{ --primary-alt ;}
+:root{ --secondary ;}
+:root{ --secondary-alt ;}
+
+:root{ --title: ;}
+:root{ --regular: ;}
+
+
 
 html {
     width: 100%;
     height: 100%;
+    background-color: #1E1E1E;
+    overflow: hidden;
 }
 
 body {
     width: 100%;
     height: 100%;
+    background-color: #1E1E1E;
 }
 
 h1 {
-    font-family: dark world;
+    font-family: 'Black Ops One', cursive;
+    text-transform:  uppercase;
+    text-align: center;
+    color: #F8F8F8 ;
+    font-size: 3.5em !important;
 }
