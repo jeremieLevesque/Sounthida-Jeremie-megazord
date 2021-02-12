@@ -33,6 +33,12 @@ picture img {
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0, 0, 138, 1));
     opacity: 45%;
 }
+.description-discographie {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Vollkorn', serif;
+    font-size: 1.3em;
+}
 
 .more {
     background-color: red;
