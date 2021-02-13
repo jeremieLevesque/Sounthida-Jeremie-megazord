@@ -8,6 +8,7 @@ main {
 
     .main-discographie{
         background-color: red;
+        
     }
 
     .main-discographie:before {
@@ -38,6 +39,7 @@ picture img {
     margin-bottom: 5%;
     font-family: 'Vollkorn', serif;
     font-size: 1.3em;
+    text-align:left;
 }
 
 .more {
@@ -50,4 +52,11 @@ picture img {
     border-radius: 5px;
     font-family: 'Vollkorn', serif;
     font-size: 1.3em;
+}
+.h1-disco{
+    text-align:left !important;
+}
+
+.button{
+    text-align:left !important;
 }
