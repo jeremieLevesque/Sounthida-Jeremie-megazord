@@ -2,14 +2,14 @@ main {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #1E1E1E;
+    background-color: var(--bg);
 }
 
 
 @media screen and (orientation:landscape) {
 
     .main-accueil {
-        background-color:#1E1E1E;
+        background-color:var(--bg);
     }
 
     .main-accueil:before {
@@ -75,7 +75,7 @@ main {
     position: relative;
     height: 100%;
     text-align: center;
-    color: white;
+    color: var(--text);
 }
 
 .contrast-accueil {
@@ -98,8 +98,8 @@ main {
 
 
 .btn-accueil {
-    background-color:#F8F8F8;
-    color: #BF0000;
+    background-color:var(--text);
+    color: var(--primary);
     border-style: none;
     position: relative;
     width: 50%;
