@@ -6,12 +6,12 @@ main {
 }
 @media screen and (orientation:landscape) {
 
-    .main-discographie{
+    .header-discographie{
         background-color: red;
         
     }
 
-    .main-discographie:before {
+    .header-discographie:before {
         content: "";
 	    float: left;
         padding-top: 56.25%;
