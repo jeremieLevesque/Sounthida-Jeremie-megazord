@@ -35,21 +35,31 @@ h1 {
     font-family: var(--title);
     text-transform:  uppercase;
     color: #F8F8F8 ;
-    font-size: 3.6em !important;
+    font-size: 57px !important;
 }
 
 h2 {
     font-family: var(--title);
-    font-size: 1.4em !important;
+    font-size: 45px !important;
     text-align: center;
 }
 
 .navbar{
-    position: absolute;
-    top: 100vh;
     width: 100%;
-    height: 20px;
+    height: fit-content;
+    padding: 5%;
     background-color: var(--primary-alt);
-
+    z-index: 3;
+    color: var(--text);
+    font-family: var(--regular);
+    font-size: 25px;
 }
 
+.navbar-nav {
+    background-color: var(--primary-alt);
+}
+
+.now-page {
+    color: var(--text);
+    text-decoration: underline dotted #F8F8F8;
+}
