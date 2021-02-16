@@ -13,6 +13,9 @@
         --regular: 'Vollkorn', serif;
     }
 
+    * {
+        box-sizing: border-box;
+    }
 
 
 html {
@@ -32,5 +35,13 @@ h1 {
     font-family: var(--title);
     text-transform:  uppercase;
     color: #F8F8F8 ;
-    font-size: 3.5em !important;
+    font-size: 3.6em !important;
 }
+
+h2 {
+    font-family: var(--title);
+    font-size: 1.4em !important;
+    text-align: center;
+}
+
+
