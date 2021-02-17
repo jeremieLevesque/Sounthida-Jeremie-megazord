@@ -42,7 +42,7 @@ header {
 @media screen and (orientation:landscape) {
 
     header {
-        height: 56.25vw;
+        max-height: 56.25vw;
     }
 
 }
