@@ -19,25 +19,6 @@ section {
     padding: 5%;
 }
 
-
-/* ------------HEROS---------- */
-/* ------------HEROS---------- */
-/* ------------HEROS---------- */
-
-@media screen and (orientation:landscape) {
-
-    .header-accueil {
-        background-color:var(--bg);
-        
-    }
-
-    .header-accueil:before {
-        content: "";
-	    float: left;
-        padding-top: 56.25%;
-    }
-    
-}
 /*---------little animations------*/
 /*---------little animations------*/
 /*---------little animations------*/
@@ -63,7 +44,7 @@ section {
 
 .container-accueil {
     position: relative;
-    height: 100vh;
+    height: 100%;
     text-align: center;
     color: var(--text);
     animation-name: apparition;
@@ -87,6 +68,10 @@ section {
     }
 
 }
+
+/* ------------HEROS---------- */
+/* ------------HEROS---------- */
+/* ------------HEROS---------- */
 
 
 .img-accueil {

@@ -5,19 +5,7 @@
     background-color: blue;
     color: var(--text)
 }*/
-@media screen and (orientation:landscape) {
 
-    .header-discographie{
-        background-color: red;
-        
-    }
-
-    .header-discographie:before {
-        content: "";
-	    float: left;
-        padding-top: 56.25%;
-    }
-}
 
 picture img {
     position: absolute;
@@ -48,8 +36,6 @@ picture img {
     color: #BF0000;
     border-style: none;
     position: relative;
-    width: 25%;
-    height: 20%;
     border-radius: 5px;
     font-family: 'Vollkorn', serif;
     font-size: 25px;
@@ -59,5 +45,5 @@ picture img {
     text-align:left !important;
     padding-bottom:3%;
     position: relative;
-    height: 100vh;
+    height: 100%;
 }
