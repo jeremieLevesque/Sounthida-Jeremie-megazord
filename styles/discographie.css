@@ -60,3 +60,7 @@ footer{
     text-align:right !important;  
 }
 
+.animation{
+    position: relative;
+    width:100%;
+}
