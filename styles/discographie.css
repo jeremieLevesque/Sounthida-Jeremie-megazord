@@ -57,10 +57,17 @@ footer{
 }
 
 .texte-droite{
-    text-align:right !important;  
+    text-align:right !important; 
+
 }
 
 .animationIMG{
     position: relative;
     width:100%;  
 }
+
+.section-album1{
+ padding-top:20px;
+ padding-bottom:20px;   
+}
+
