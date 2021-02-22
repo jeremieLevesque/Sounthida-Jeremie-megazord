@@ -52,14 +52,9 @@ footer{
     background:#222;
 }
 
-.texte-gauche{
-    text-align:left !important;  
-}
 
-.texte-droite{
-    text-align:right !important; 
 
-}
+
 
 .animationIMG{
     position: relative;
