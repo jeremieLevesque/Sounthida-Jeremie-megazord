@@ -60,6 +60,12 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: var(--title);
+    font-size: 25px !important;
+    text-align: center;
+}
+
 button:hover {
     transform: scale(0.95);
     transition: 0.3s;
