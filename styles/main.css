@@ -111,6 +111,13 @@ footer {
     padding-left: 20px;
     padding-right:20px;
     padding-bottom:20px;
+    font-family: var(--regular);
+    font-size: 18px;
+}
+
+.nom-prenom:hover{
+    opacity: 80%;
+    cursor: pointer;
 }
 
 
@@ -131,4 +138,13 @@ iframe {
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+/*----POP UPS---*/
+
+.modal-img {
+    position: relative;
+    display: block;
+    width: 300px;
+    margin: 0 auto;
 }
