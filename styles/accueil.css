@@ -168,3 +168,21 @@ main {
     transform: scale(0.97);
     transition: 0.3s;
 }
+
+/*----section promo---*/
+
+.section-promo {
+    margin-top: 40px;
+}
+
+.swiper-container-accueil {
+    position: relative;
+    width: 100%;
+    height: 56.25%;
+  }
+
+.swiper-container-accueil img {
+    position: relative;
+    width: 100%;
+    object-fit: cover;
+}

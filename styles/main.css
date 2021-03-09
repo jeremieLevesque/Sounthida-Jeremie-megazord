@@ -62,7 +62,10 @@ h2 {
 
 h3 {
     font-family: var(--title);
-    font-size: 25px !important;
+}
+
+h4 {
+    font-family: var(--title);
     text-align: center;
 }
 
