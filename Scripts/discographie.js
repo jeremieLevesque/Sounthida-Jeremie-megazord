@@ -1,13 +1,14 @@
 const swiper = new Swiper('.swiper-container-discographie', {
-    autoplay:{delay: 2000},
-    direction: 'vertical',
-     loop: true,
-     speed: 400,
-     effect:'cube',
-     freeMode: true,
 
-     cubeEffect: {
-       slideShadows: true,
-     }
+  direction: 'horizontal',
+  loop: false,
+  speed: 800,
+  slidesPerView: 1,
+  effect: 'slide',
 
-    });
+
+  pagination: {
+    el: '.swiper-pagination-discographie',
+  },
+
+});
