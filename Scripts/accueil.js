@@ -12,4 +12,6 @@ const swiper = new Swiper('.swiper-container-accueil', {
     },
 
   });
+
+  /*animation section GSAP*/
   
