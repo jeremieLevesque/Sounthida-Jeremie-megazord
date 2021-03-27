@@ -16,6 +16,11 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+        <!-----------------------------GSAP PLUGINS---------------------------->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+        
 
         <!------------------- LIEN DES TYPOGRAPHIES GOOGLE --------------------->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -85,90 +90,92 @@
                         <section class="section-accueil">
                             <div class="row justify-content-center">
                                 <div class="col-12">
-                                    <h2>MEMBRES DU GROUPE</h2>
+                                    <h2 class="accueil-title">MEMBRES DU GROUPE</h2>
                                 </div>
-                                
-                                <div class="col-12 col-sm-6">
-                                    <div class="card">
-                                        <img src="img/benjamin_kowalewicz.jpg" class="card-img-top">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Benjamin Kowalewicz</h3>
-                                            <div class="role">Chanteur</div>
-                                            <div class="card-description">Benjamin Kowalewicz est un chanteur de rock canadien né le 16 décembre 1975 à Montréal.
-                                                Autrefois batteur dans un groupe précédant, il est maintenant le chanteur du groupe Billy Talent.
+
+                                <div class="col-12 row justify-content-center accueil-content">
+                                    
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/benjamin_kowalewicz.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Benjamin Kowalewicz</h3>
+                                                <div class="role">Chanteur</div>
+                                                <div class="card-description">Benjamin Kowalewicz est un chanteur de rock canadien né le 16 décembre 1975 à Montréal.
+                                                    Autrefois batteur dans un groupe précédant, il est maintenant le chanteur du groupe Billy Talent.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://fr.wikipedia.org/wiki/Benjamin_Kowalewicz"><button type="button" class="btn-card">En savoir plus</button></a>
                                             </div>
                                         </div>
-                                        <div class="card-footer">
-                                            <a href="https://fr.wikipedia.org/wiki/Benjamin_Kowalewicz"><button type="button" class="btn-card">En savoir plus</button></a>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/ian_dsa.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Ian D'Sa</h3>
+                                                <div class="role">Guitariste principal</div>
+                                                <div class="card-description">D'origine indienne (Goa), né en Angleterre le 30 octobre 1975, Ian a grandi en Ontario.
+                                                    Ayant appris la guitare à 13 ans, il est maintenant le guitariste principal de Billy Talent.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://fr.wikipedia.org/wiki/Ian_D%27Sa"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/jonathan_gallant.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Jon Gallant</h3>
+                                                <div class="role">Bassiste</div>
+                                                <div class="card-description">Jonathan Gallant (né le 23 juillet 19751) est le bassiste du groupe Billy Talent. Jon a grandi à Streetsville, Ontario.
+                                                    Il a commencé à jouer de la guitare basse à douze ans.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://fr.wikipedia.org/wiki/Jonathan_Gallant"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/aaron_solowoniuk.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Aaron Solowoniuk</h3>
+                                                <div class="role">Batteur</div>
+                                                <div class="card-description">Aaron Solowoniuk, d'ascendance polonaise, est né le 21 novembre 1974 et a grandi à Streetsville, Ontario.
+                                                    Il est le batteur de Billy Talent.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://en.wikipedia.org/wiki/Aaron_Solowoniuk"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/jordan_hastings.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Jordan Hastings</h3>
+                                                <div class="role">Batteur secondaire</div>
+                                                <div class="card-description">Jordan "Ratbeard" Hastings (né le 15 mars 1982) est un musicien canadien né à Hamilton, en Ontario.
+                                                    En janvier 2016, Hastings a commencé à remplacer Aaron Solowoniuk dans le groupe Billy Talent, après que Solowoniuk eut une rechute de sclérose en plaques. 
+                                                    Il a enregistré la batterie pour leur dernier album Afraid of Heights, sorti en juillet 2016.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://en.wikipedia.org/wiki/Jordan_Hastings"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="col-12 col-sm-6">
-                                    <div class="card">
-                                        <img src="img/ian_dsa.jpg" class="card-img-top">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Ian D'Sa</h3>
-                                            <div class="role">Guitariste principal</div>
-                                            <div class="card-description">D'origine indienne (Goa), né en Angleterre le 30 octobre 1975, Ian a grandi en Ontario.
-                                                Ayant appris la guitare à 13 ans, il est maintenant le guitariste principal de Billy Talent.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="https://fr.wikipedia.org/wiki/Ian_D%27Sa"><button type="button" class="btn-card">En savoir plus</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6">
-                                    <div class="card">
-                                        <img src="img/jonathan_gallant.jpg" class="card-img-top">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Jon Gallant</h3>
-                                            <div class="role">Bassiste</div>
-                                            <div class="card-description">Jonathan Gallant (né le 23 juillet 19751) est le bassiste du groupe Billy Talent. Jon a grandi à Streetsville, Ontario.
-                                                Il a commencé à jouer de la guitare basse à douze ans.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="https://fr.wikipedia.org/wiki/Jonathan_Gallant"><button type="button" class="btn-card">En savoir plus</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6">
-                                    <div class="card">
-                                        <img src="img/aaron_solowoniuk.jpg" class="card-img-top">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Aaron Solowoniuk</h3>
-                                            <div class="role">Batteur</div>
-                                            <div class="card-description">Aaron Solowoniuk, d'ascendance polonaise, est né le 21 novembre 1974 et a grandi à Streetsville, Ontario.
-                                                Il est le batteur de Billy Talent.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="https://en.wikipedia.org/wiki/Aaron_Solowoniuk"><button type="button" class="btn-card">En savoir plus</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-sm-6">
-                                    <div class="card">
-                                        <img src="img/jordan_hastings.jpg" class="card-img-top">
-                                        <div class="card-body">
-                                            <h3 class="card-title">Jordan Hastings</h3>
-                                            <div class="role">Batteur secondaire</div>
-                                            <div class="card-description">Jordan "Ratbeard" Hastings (né le 15 mars 1982) est un musicien canadien né à Hamilton, en Ontario.
-                                                En janvier 2016, Hastings a commencé à remplacer Aaron Solowoniuk dans le groupe Billy Talent, après que Solowoniuk eut une rechute de sclérose en plaques. 
-                                                Il a enregistré la batterie pour leur dernier album Afraid of Heights, sorti en juillet 2016.
-                                            </div>
-                                        </div>
-                                        <div class="card-footer">
-                                            <a href="https://en.wikipedia.org/wiki/Jordan_Hastings"><button type="button" class="btn-card">En savoir plus</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-
                             </div>
                         </section>
 
@@ -177,9 +184,9 @@
                         <section class="section-video">
                             <div class="container">
                                 <div class="col-12">
-                                    <h2>Vidéo</h2>
+                                    <h2 class="accueil-title">VIDÉO</h2>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 accueil-content">
                                     <div class="wrapper-video">
                                         <iframe class="video" src="https://www.youtube.com/embed/_zssP6w0VWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                     </div>
@@ -193,9 +200,9 @@
                         <section class="section-promo">
                             <div class="container">
                                 <div class="col-12">
-                                    <h2>Images promotionelles</h2>
+                                    <h2 class="accueil-title">IMAGES PROMOTIONELLES</h2>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-12 accueil-content">
                                     <div class="swiper-container-accueil">
                                         
                                         <div class="swiper-wrapper">
