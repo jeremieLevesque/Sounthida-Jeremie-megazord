@@ -35,7 +35,7 @@ gsap.registerPlugin(ScrollTrigger);
           markers: false,
           start: "top 10%",
           trigger: section,          
-          toggleActions: "play stop play reverse"
+          toggleActions: "play pause play reverse"
         }
       }) 
 
@@ -52,7 +52,7 @@ gsap.registerPlugin(ScrollTrigger);
       .fromTo(content,
         {
           opacity: 0,
-          y: -110       
+          y: 110       
         },
         {
           opacity: 1,
