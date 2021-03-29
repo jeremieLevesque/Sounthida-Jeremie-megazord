@@ -53,7 +53,7 @@ gsap.registerPlugin(ScrollTrigger);
       .fromTo(content,
         {
           opacity: 0,
-          y: 50
+          y: -50
                   
         },
         {
