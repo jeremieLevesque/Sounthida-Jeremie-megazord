@@ -20,30 +20,29 @@ var swiper = new Swiper('.swiper-container-discographie', {
   },
 });
 
-gsap.registerPlugin(ScrollTrigger);  
+gsap.registerPlugin(ScrollTrigger);   
 
   
-  const sectionList = document.querySelectorAll('.section-disco');
+  var sectionList = document.querySelectorAll('.section-disco');
 
   sectionList.forEach(section => {
 
-      const title = section.querySelector('.tittle-disco');
-      const content = section.querySelector('.content-disco');
-
+      var title = section.querySelector('.tittle-disco');
+      var content = section.querySelector('.content-disco');
       gsap.timeline({
 
         scrollTrigger: {
           markers: false,
           start: "top 10%",
           trigger: section,          
-          toggleActions: "play none reverse none"
+          toggleActions: "play stop play reverse"
         }
       }) 
 
       .fromTo(title,
         {
           opacity: 0,
-          y: 50
+          y: 110
         },
         {
           opacity: 1,
@@ -53,15 +52,12 @@ gsap.registerPlugin(ScrollTrigger);
       .fromTo(content,
         {
           opacity: 0,
-          y: -50
-                  
+          y: -110       
         },
         {
           opacity: 1,
           y: 0
- 
         }, 0
-        
       )      
   });
 
