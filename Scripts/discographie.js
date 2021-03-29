@@ -1,4 +1,4 @@
-
+gsap.registerPlugin(ScrollTrigger);
 
 var swiper = new Swiper('.swiper-container-discographie', {
   direction: 'vertical',
@@ -19,3 +19,31 @@ var swiper = new Swiper('.swiper-container-discographie', {
     prevEl: '.swiper-button-prev',
   },
 });
+
+
+const sectionList = document.querySelectorAll(".section");
+
+sectionList.forEach(section => {
+
+    const title = document.querySelector(".album1");
+    const image = document.querySelector(".img1");
+
+    gsap.timeline({
+
+      scrollTrigger: {
+        markers: true,
+        trigger: section,
+        start: "bottom bottom";
+        //toggleActions: ;
+      }
+
+      title.from {
+        scale: 2
+      }
+
+      img.from {
+
+
+      }
+
+    });
