@@ -1,5 +1,4 @@
 
-gsap.registerPlugin(ScrollTrigger);
 
 
 const swiper = new Swiper('.swiper-container-accueil', {
@@ -18,32 +17,49 @@ const swiper = new Swiper('.swiper-container-accueil', {
   });
 
   /*animation section GSAP*/
+  gsap.registerPlugin(ScrollTrigger);  
+
   
-  const sectionList = document.querySelectorAll(".section");
+  const sectionList = document.querySelectorAll('.section-acc');
 
   sectionList.forEach(section => {
 
-      const title = document.querySelector(".accueil-title");
-      const content = document.querySelector(".accueil-content");
+      const title = section.querySelector('.accueil-title');
+      const content = section.querySelector('.accueil-content');
 
-      gsap.timeline() {
+      gsap.timeline({
 
-        scrollTrigger {
-          markers: true;
-          trigger: ".section";
-          start: "bottom bottom";
-          //toggleActions: ;
+        scrollTrigger: {
+          markers: false,
+          start: "top 20%",
+          trigger: section,          
+          toggleActions: "play stop play reverse"
         }
+      }) 
 
-        title.from {
-
+      .fromTo(title,
+        {
+          opacity: 0,
+          y: 50 
+        },
+        {
+          opacity: 1,
+          y: 0
         }
-
-        content.from {
-
-
-        }
-
-      });
+      )         
+      .fromTo(content,
+        {
+          opacity: 0,
+          y: -50
+                  
+        },
+        {
+          opacity: 1,
+          y: 0
+ 
+        }, 0
+        
+      )      
+  });
 
 
