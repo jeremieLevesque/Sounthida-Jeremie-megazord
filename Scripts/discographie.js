@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+
 
 var swiper = new Swiper('.swiper-container-discographie', {
   direction: 'vertical',
@@ -20,30 +20,49 @@ var swiper = new Swiper('.swiper-container-discographie', {
   },
 });
 
+gsap.registerPlugin(ScrollTrigger);  
 
-const sectionList = document.querySelectorAll(".section");
+  
+  const sectionList = document.querySelectorAll('.section-disco');
 
-sectionList.forEach(section => {
+  sectionList.forEach(section => {
 
-    const title = document.querySelector(".album1");
-    const image = document.querySelector(".img1");
+      const title = section.querySelector('.tittle-disco');
+      const content = section.querySelector('.content-disco');
 
-    gsap.timeline({
+      gsap.timeline({
 
-      scrollTrigger: {
-        markers: true,
-        trigger: section,
-        start: "bottom bottom";
-        //toggleActions: ;
-      }
+        scrollTrigger: {
+          markers: false,
+          start: "top 10%",
+          trigger: section,          
+          toggleActions: "play none reverse none"
+        }
+      }) 
 
-      title.from {
-        scale: 2
-      }
+      .fromTo(title,
+        {
+          opacity: 0,
+          y: 50
+        },
+        {
+          opacity: 1,
+          y: 0
+        }
+      )         
+      .fromTo(content,
+        {
+          opacity: 0,
+          y: 50
+                  
+        },
+        {
+          opacity: 1,
+          y: 0
+ 
+        }, 0
+        
+      )      
+  });
 
-      img.from {
 
-
-      }
-
-    });
