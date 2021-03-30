@@ -2,14 +2,14 @@
 
 <h2>BILLY TALENT</h2>
 
-🔴Sounthida Kong (PAGE D'ACCUEIL)
+🔴 Sounthida Kong (PAGE D'ACCUEIL)
 </br>
-🔵Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
+🔵 Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
 </br>
 </br>
 
   <h3><b>ANIMATIONS</b></h3>
-  <span style="color:red">🔴 Sounthida Kong
+  <span style="color:red">🔴
     </br>
     Idle: https://codepen.io/Sounthi/pen/GRrjwzp
     </br>
@@ -19,7 +19,7 @@
   </span>
   </br>
    </br>
-  <span style="color:blue">🔵 Jérémie Lévesque
+  <span style="color:blue">🔵
     </br>
     Idle:
     </br>
