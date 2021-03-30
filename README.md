@@ -1,6 +1,6 @@
 # Sounthida-Jeremie-megazord
 
-Billy Talent
+<h2>Billy Talent</h2>
 
 🔴Sounthida Kong (PAGE D'ACCUEIL)
 🔵Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
