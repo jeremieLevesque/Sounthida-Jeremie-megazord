@@ -1,6 +1,6 @@
 # Sounthida-Jeremie-megazord
 
-<h2>Billy Talent</h2>
+<h2>BILLY TALENT</h2>
 
 🔴Sounthida Kong (PAGE D'ACCUEIL)
 🔵Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
@@ -8,7 +8,7 @@
 </br>
 
   <h3><b>ANIMATIONS</b></h3>
-  <span style="color:red">SOUNTHIDA KONG
+  <span style="color:red">🔴 Sounthida Kong
     </br>
     Idle: https://codepen.io/Sounthi/pen/GRrjwzp
     </br>
@@ -18,7 +18,7 @@
   </span>
   </br>
    </br>
-  <span style="color:blue">JÉRÉMIE LÉVESQUE
+  <span style="color:blue">🔵 Jérémie Lévesque
     </br>
     Idle:
     </br>
