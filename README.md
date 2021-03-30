@@ -3,6 +3,7 @@
 <h2>BILLY TALENT</h2>
 
 🔴Sounthida Kong (PAGE D'ACCUEIL)
+</br>
 🔵Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
 </br>
 </br>
