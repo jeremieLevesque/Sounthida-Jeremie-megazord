@@ -1,6 +1,3 @@
-
-
-
 const swiper = new Swiper('.swiper-container-accueil', {
 
     direction: 'horizontal',
@@ -16,8 +13,8 @@ const swiper = new Swiper('.swiper-container-accueil', {
 
   });
 
-  /*animation section GSAP*/
-  gsap.registerPlugin(ScrollTrigger);  
+/*animation section GSAP*/
+gsap.registerPlugin(ScrollTrigger);  
 
   
   const sectionList = document.querySelectorAll('.section-acc');
@@ -62,4 +59,36 @@ const swiper = new Swiper('.swiper-container-accueil', {
       )      
   });
 
+/*animation-emo*/
 
+let timeout;
+let body = document.body;
+
+
+gsap.to('.emo-animation', {
+
+  scrollTrigger: {
+    scrub: true,
+    trigger: ".barre-laterale-accueil",
+    onUpdate: (e) => {
+      
+      body.classList.add("is-scrolling");
+     
+      clearTimeout(timeout);
+     
+      timeout = setTimeout(() => {
+        body.classList.remove("is-scrolling");
+      }, 250);
+      
+      if (e.direction == 1) {
+        body.classList.remove("emo-scrollup");
+        body.classList.add("emo-scrolldown");
+      } 
+      else {
+        body.classList.remove("emo-scrolldown");
+        body.classList.add("emo-scrollup");
+        
+      }
+    }
+  },
+})
