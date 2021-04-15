@@ -137,12 +137,11 @@ footer{
     background-size: cover;
     animation: guitAttente 1s infinite steps(29) ;
 }
-  
+
   @keyframes guitAttente {
     from { background-position: 0 0; }
     to { background-position: 0 100% ; }
   }
-
 
 .guit-monter.il-scroll .guit-animation{
     position: sticky;
@@ -160,7 +159,6 @@ footer{
     to { background-position: 0 100% ; }
   } 
   
-
 .guit-descendre.il-scroll .guit-animation{
     position: sticky;
     width: 100%;
@@ -171,6 +169,7 @@ footer{
     background-size: cover;
     animation: guitBas 1s infinite steps(29) ;
 }
+
 
 @keyframes guitBas {
   from { background-position: 0 0; }

@@ -61,7 +61,6 @@ gsap.registerPlugin(ScrollTrigger);
       )      
   });
 
-
 /*animation*/
 
 let timeout;
