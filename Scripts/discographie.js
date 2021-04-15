@@ -75,21 +75,21 @@ gsap.to('.guit-animation', {
     trigger: ".barre-laterale-discographie",
     onUpdate: (e) => {
       
-      body.classList.add("is-scrolling");
+      body.classList.add("il-scroll");
      
       clearTimeout(timeout);
      
       timeout = setTimeout(() => {
-        body.classList.remove("is-scrolling");
+        body.classList.remove("il-scroll");
       }, 250);
       
       if (e.direction == 1) {
-        body.classList.remove("guit-scrollup");
-        body.classList.add("guit-scrolldown");
+        body.classList.remove("guit-monter");
+        body.classList.add("guit-descendre");
       } 
       else {
-        body.classList.remove("guit-scrolldown");
-        body.classList.add("guit-scrollup");
+        body.classList.remove("guit-descendre");
+        body.classList.add("guit-monter");
         
       }
     }
