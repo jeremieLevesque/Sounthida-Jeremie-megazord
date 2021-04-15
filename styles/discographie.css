@@ -120,3 +120,57 @@ footer{
     background: var(--primary) !important;
     opacity: 100% !important;
 }
+
+/*-------ANIMATION------*/
+/*-------ANIMATION------*/
+/*-------ANIMATION------*/
+
+.guit-animation {
+    position: sticky;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    top: 50%;
+    background-image: url(https://imgur.com/ZazIYwv.png);
+    background-size: cover;
+    animation: guitMusic 1s infinite steps(29) ;
+}
+  
+  @keyframes guitMusic {
+    from { background-position: 0 0; }
+    to { background-position: 0 100% ; }
+  }
+
+
+.guit-scrollup.is-scrolling .guit-animation{
+    position: sticky;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    top: 50%;
+    background-image: url(https://imgur.com/jRGjOGL.png);
+    background-size: cover;
+    animation: guitStretch 1s infinite steps(29) ;
+  }
+  
+  @keyframes guitStretch {
+    from { background-position: 0 0; }
+    to { background-position: 0 100% ; }
+  } 
+  
+
+.guit-scrolldown.is-scrolling .guit-animation{
+    position: sticky;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    top: 50%;
+    background-image: url(https://imgur.com/2rKhVtk.png);
+    background-size: cover;
+    animation: guitRock 1s infinite steps(29) ;
+}
+
+@keyframes guitRock {
+  from { background-position: 0 0; }
+  to { background-position: 0 100% ; }
+} 

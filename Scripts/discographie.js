@@ -62,3 +62,36 @@ gsap.registerPlugin(ScrollTrigger);
   });
 
 
+/*animation*/
+
+let timeout;
+let body = document.body;
+
+
+gsap.to('.guit-animation', {
+
+  scrollTrigger: {
+    scrub: true,
+    trigger: ".barre-laterale-discographie",
+    onUpdate: (e) => {
+      
+      body.classList.add("is-scrolling");
+     
+      clearTimeout(timeout);
+     
+      timeout = setTimeout(() => {
+        body.classList.remove("is-scrolling");
+      }, 250);
+      
+      if (e.direction == 1) {
+        body.classList.remove("guit-scrollup");
+        body.classList.add("guit-scrolldown");
+      } 
+      else {
+        body.classList.remove("guit-scrolldown");
+        body.classList.add("guit-scrollup");
+        
+      }
+    }
+  },
+})
