@@ -1,18 +1,227 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
 
- <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="main.css">
-    <script type="text/javascript" src="main.js"></script>
-    <script type="text/javascript" src="discographie.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+         <!-----------------------------GSAP PLUGINS---------------------------->
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+
+         
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="ttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/components/pagination/pagination.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+       
+
+        <!---------------------------SWIPPER PLUGIN----------------------------->
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+
+        <!------------------- LIEN DES TYPOGRAPHIES GOOGLE --------------------->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet"> 
+
+<title>Discographie</title>
 </head>
 
  <body>
+    <header class="header-discographie">
+      <div class="container">
+        <div class="contrast-discographie"></div>
+        
+            <div class="col-12">
+          
+            </div>
+            <div class="col-12">
+                <div class="swiper-container-discographie">
+                 
+                    <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide swiper-discographie"><img src="img/Billy_Talent_album.jpg"></div>
+                    <div class="swiper-slide swiper-discographie"><img src="img/billy2.jpg"></div>
+                    <div class="swiper-slide swiper-discographie"><img src="img/BILLY3.jpg"></div>
+                    
+                    
+                    </div>
+                    
+                    <div class="swiper-pagination-discographie"></div>
+                   
+                </div>
+            </div>
+        </div>
+           
+     <div class="container container-discographie d-flex align-items-end container-discographie">
+     <div class="col-12 col-sm-8">
+      <h1 class="disco">Discographie</h1>
+      <p class="description-discographie">Billy Talent cummulent plus de 10 albums à leur actif, répartis entre 1999 et 2020.</p>
+      <a href="#main_discographie col-12 col-md-9"><button type="button" class="btn-discographie">En savoir plus</button></a>
+     </div>
+   </div>
+</div>
+   </div>
+   </div>
+   </div>
+      
+ 
+   
 
+
+
+  </header>
+   <!-----------------------------NAVBAR------------------------------------>
+
+   <nav class="navbar sticky-top navbar-dark navbar-expand-sm">
+    <div class="container-fluid d-flex flex-sm-row-reverse">
+            <!--MENU HAMBURGER-->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!--NAVIGATION-->
+            <div id="mainNav" class="collapse navbar-collapse">
+                <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="discographie.html" class="nav-link"><span class="now-page">Discographie</span></a>
+                </li>
+                </ul>
+            </div>
+            <!--BRANDING-->
+            <div class="logo">
+                <a class="navbar-brand" href="index.html">BILLY TALENT</a>
+            </div>
+    </div>
+  </nav>
+
+  
+  <!--MAIN-->
+
+  <main id="main_discographie col-12 col-md-9">
+      <div class="row">
+  
+        <div class="col-12 col-md-9 section-disco">
+  <div class="contenu">
+      <section class="section-discographie">
+        <div class="col-12">
+          <h2 class="tittle-disco">ALBUM DU GROUPE</h2>
+      </div>
+        <div class="card content-disco">
+            <div class="row">
+              <div class="col-12 col-sm-5 ">
+                  <h2 class="tittle-disco">Billy Talent</h2>
+                <div class="card-body">1. This Is How It Goes</br>2.Red Flag</br>3.This Surffering</br>4.Line & Sinker</br>5. Fallen Leaves</br>6.The Ex</br>7. Cut the Curtains</br>8. Surrender</br>9.Worker Bees</br>10.Prisoners of Today</br></div>
+                <div class="card-footer">
+                    <a href="https://billytalent.store-08.com/music/bt050007-billy-talent-billy-talent-12-vinyl-black-bt050007/"><button type="button" class="btn-card">En savoir plus</button></a>
+                </div>
+                </div>
+              <div class="col-12 col-sm-7">
+                <div class="img1">
+                <img src="img/Billy_Talent_album.jpg" class="img-fluid">
+              </div></div>
+<!--album2-->
+<div class="col-12 col-sm-7 section-disco">
+    
+    <img src="img/billy2.jpg" class="img-fluid">
+  </div>
+<div class="col-12 col-sm-5 content-disco">
+    <h2 class="tittle-disco">Billy Talent II</h2>
+  <div class="card-body">1. Lonely Road to Absolution</br>2. Viking Death March</br>3. Surprise Surprise</br>4. Runnin' Across the Tracks</br>5. Love Was Still Around</br>6. Stand Up and Run</br>7. Crooked Minds</br>8. Man Alive!</br>9. Hanging by a Thread</br>10. Cure for the Enemy</br></div>
+  <div class="card-footer">
+      <a href="https://billytalent.store-08.com/music/bt050011-billy-talent-billy-talent-ii-2x12-vinyl-white/"><button type="button" class="btn-card">En savoir plus</button></a>
+  
+  </div>
+</div>
+
+<!--album3-->
+<div class="col-12 col-sm-5">
+   
+    <h2 class="tittle-disco">BILLY TALENT III</h2>
+  <div class="card-body">1. Try Honesty</br>2. River Below</br>3. Nothing to Lose</br>4. Surrender</br>5. Devil on My Shoulder</br>6. Rusted From the Rain</br>7. Viking Dead March</br>8. Kingdom of Zod</br>9. Chasing the Sun</br>10.The Suffering</br></div>
+  <div class="card-footer">
+      <a href="https://billytalent.store-08.com/music/bt050012-billy-talent-billy-talent-iii-12-vinyl-black/"><button type="button" class="btn-card">En savoir plus</button></a>
+  </div>
+  </div>
+<div class="col-12 col-sm-7">
+  <img src="img/BILLY3.jpg" class="img-fluid">
+</div>
+  
+            </div>
+          </div>
+
+      </section>
+  </div>
+</div>
+
+
+  
+      <div class="barre-laterale-discographie col-md-3 d-none d-md-block">
+        <div class="guit-animation"></div>
+</div>
+  </div>
+</div>
+
+</main>
+ 
+       
+  <!--pied de page-->
+<footer>
+    <div class="row d-flex">
+        <div class=" col-12 col-lg-6 text-center text-lg-start">
+            <p class="text-gauche text-light">Sounthida Kong </p>
+            <p class="text-gauche text-light">Jérémie Lévesque </p>
+            
+        </div>
+        <div class=" col-12 col-lg-6 text-center text-lg-end">
+            <p class="texte-droite text-light">https://github.com/jeremieLevesque/Sounthida-Jeremie-megazord </p>
+            <p class="texte-droite text-light">©2021</p>
+        </div>
+
+
+
+    </div>
+</footer>
+ <!---------pop-ups------->
+    
+ <div class="modal fade" id="sounthi" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title">Sounthida Kong</h4>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+      </div>
+      <div class="modal-body">
+          <img src="img/aaron_solowoniuk.jpg" class="modal-img">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="jeremie" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+          <h4 class="modal-title">Jérémie Lévesque</h4>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+      </div>
+      <div class="modal-body">
+          <img src="img/aaron_solowoniuk.jpg" class="modal-img">
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--pied de page fin-->
+<script type="text/javascript" src="Scripts/discographie.js"></script>
  </body>
 
 </html>
