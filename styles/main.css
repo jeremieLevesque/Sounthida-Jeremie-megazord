@@ -158,3 +158,9 @@ iframe {
     margin: 0 auto;
 }
 
+
+.modalquizz {
+    position: relative;
+    display: block;
+    z-index:99;
+}
