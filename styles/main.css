@@ -158,9 +158,23 @@ iframe {
     margin: 0 auto;
 }
 
-
-.modalquizz {
-    position: relative;
+/*----quiz---*/
+.question {
+    display: none;
+  }
+  
+  .is-visible {
     display: block;
-    z-index:99;
-}
+  }
+  
+  .quizzFini {
+    display:none;
+  }
+  
+  .divPointage {
+    
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
