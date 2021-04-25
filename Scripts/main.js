@@ -1,4 +1,4 @@
-let modal= document.querySelector("modal-QUIZ-body");
+ let modal = document.querySelector(".modal-QUIZ-body");
 let questionsList = [
     {
       q: "Quel était le premier nom du groupe?",
@@ -91,10 +91,10 @@ let questionsList = [
     }
       
     creerHTML(question, index) {
-      
+
       this.el = document.createElement("div");
       this.el.classList.add("question");
-      document.body.appendChild(this.el);
+      modal.appendChild(this.el);
       
   
       this.strongQuestion = document.createElement("strong");
