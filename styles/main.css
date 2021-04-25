@@ -159,22 +159,80 @@ iframe {
 }
 
 /*----quiz---*/
+
+
 .question {
     display: none;
   }
   
-  .is-visible {
+.is-visible {
     display: block;
   }
   
-  .quizzFini {
+.quizzFini {
     display:none;
   }
   
-  .divPointage {
+.divPointage {
     
     font-size: 40px;
     font-weight: bold;
     text-align: center;
     
+}
+
+
+  /*QUIZZ CSS */
+
+.anim-bonne-rep {
+  display: none;
+  position: absolute;
+  z-index: 9;
+  width: 275px;
+  transform: scale(1);
+}
+
+.rond-vert {
+  position: absolute;
+  z-index: -1;
+}
+
+.punk-bon {
+  position: relative;
+  z-index: 4;
+  transform: scale(1);
+}
+
+.yeah {
+  position: absolute;
+  z-index: 3;
+  font-size: 100px;
+  opacity: 0;
+  color: white;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: Black Ops One;
+  
+}
+
+
+.animation {
+    display: none;
+    position: absolute;
+    z-index: 9;
+    width: 275px;
+    transform: scale(1);
+  }
+  
+  .cercle {
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .perso {
+    position: relative;
+    z-index: 4;
+    transform: scale(1);
+  
   }

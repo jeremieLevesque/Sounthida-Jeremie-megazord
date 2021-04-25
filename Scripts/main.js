@@ -1,3 +1,4 @@
+
 let questionsList = [
   {
     q: "Quel était le premier nom du groupe?",
@@ -70,6 +71,10 @@ let questionsList = [
   }
 ];
     modal = document.querySelector(".modal-QUIZ-body");
+    let animWrapper = document.querySelector(".anim-bonne-rep");
+    let animationWrapper = document.querySelector('.animation');
+
+    
 
 class Quiz { 
 
@@ -107,7 +112,7 @@ class Quiz {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
-      this.radio.setAttribute("name", "question " + index) // HOWWW DAFUQ
+      this.radio.setAttribute("name", "question " + index)
       this.radio.setAttribute("value", "1");
       this.el.appendChild(this.radio);
       
@@ -116,14 +121,14 @@ class Quiz {
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
-      this.label.appendChild(this.radiobr);
+      this.el.appendChild(this.radiobr);
     }
      
     if(typeof question.o2 !== "undefined") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
-      this.radio.setAttribute("name", "question" + index ) // HOWWW DAFUQ
+      this.radio.setAttribute("name", "question" + index )
       this.radio.setAttribute("value", "2");
       this.el.appendChild(this.radio);      
       
@@ -132,7 +137,7 @@ class Quiz {
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
-      this.label.appendChild(this.radiobr);
+      this.el.appendChild(this.radiobr);
     }
     
     
@@ -140,7 +145,7 @@ class Quiz {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
-      this.radio.setAttribute("name", "question" + index) // HOWWW DAFUQ
+      this.radio.setAttribute("name", "question" + index);
       this.radio.setAttribute("value", "3");
       this.el.appendChild(this.radio);
       
@@ -149,7 +154,7 @@ class Quiz {
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
-      this.label.appendChild(this.radiobr);
+      this.el.appendChild(this.radiobr);
     }
      
     
@@ -157,7 +162,7 @@ class Quiz {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
-      this.radio.setAttribute("name", "question" + index ) // HOWWW DAFUQ
+      this.radio.setAttribute("name", "question" + index )
       this.radio.setAttribute("value", "4");
       this.el.appendChild(this.radio);
       
@@ -166,7 +171,7 @@ class Quiz {
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
-      this.label.appendChild(this.radiobr);
+      this.el.appendChild(this.radiobr);
     }
   }
   
@@ -183,7 +188,7 @@ class Quiz {
   }
     
     
-   validation() {
+  validation() {
       
       const btnRadio = document.querySelectorAll("input[type=radio]");
       
@@ -191,12 +196,13 @@ class Quiz {
           radioButton.addEventListener("change", ()=> {
           
             if (radioButton.value == this.questions[this.index].r) {
-              this.score++;
-              console.log("Bonne reponse! Pointage: " + this.score);         
+              this.correct();            
+                      
             }
             
             else {
-              console.log("Mauvaise réponse. Pointage: " + this.score);   
+              this.bad();
+               
             }
             
             if (this.index <= this.questions.length){
@@ -219,14 +225,110 @@ class Quiz {
 
                 
               }
+                            
               
-              this.setVisible(this.index);                         
-              }           
-          });    
-       });      
-    }
-};
+              this.setVisible(this.index);                    
 
+            }           
+          });    
+      });      
+  }
+
+  correct() {
+    this.score++;              
+
+              animWrapper.style.display = "block";       
+
+              var animation = gsap.fromTo('.anim-bonne-rep', 
+                    { scale: 0 },
+                    { scale: 1,
+                      duration: 1.5,
+                      ease:Power4.easeOut}
+                    );
+              
+              var animationVert = gsap.fromTo('.rond-vert',
+                    { rotationY: 0},
+                    { rotationY: -720,
+                      duration: 2,
+                      ease:Power4.easeOut }
+                  );
+              
+              var animationYeah = gsap.fromTo('.yeah', 
+                    { fontSize: 0,
+                      opacity: "100%"},
+                    { fontSize: 100,
+                      opacity: "0%",
+                      delay: 0.5,
+                      duration: 2,
+                      ease:Power4.easeOut }
+                    );
+              
+              var animationPunk = gsap.fromTo('.punk-bon', 
+                    { scale: 0,
+                      rotation: 0},
+                    { scale: 1,
+                      delay: 0.7,
+                      rotationZ: 1080,
+                      duration: 1, 
+                      ease:Power4.easeOut}
+                    );
+                
+              var disparition = gsap.fromTo('.anim-bonne-rep',
+                    { scale: 1,
+                      rotation: 0},
+                    { scale: 0,
+                      rotation: -1080,
+                      delay:3,
+                      duration: 0.5,
+                      onComplete: fini}
+                );
+                  
+              function fini() {
+                animWrapper.style.display = "none";
+                };
+  }
+
+  bad(){
+
+      
+  animationWrapper.style.display = "block";
+  
+  gsap.from('.animation', 
+    { scale: 0,
+     duration: 1.5,
+     ease:Power4.easeOut
+     }
+    );
+
+  gsap.from('.cercle', 
+    { rotationX: -500,
+     duration: 2,
+     ease:Power4.easeOut }
+  );
+  
+
+  gsap.from('.perso', 
+    { scale: 0,
+     delay: 0.5,
+     rotationZ: -500,
+     duration: 2, 
+     ease:Power4.easeOut}
+    );
+   
+  var disparaitre = gsap.to('.animation-disparition',
+      { delay:3,
+        scale:0,
+        rotation: 360,
+        duration: 0.5,
+        onComplete: fini
+  });
+
+  function fini() {
+    animWrapper.style.display = "none";
+    };
+    
+  }
+};
 
 
 new Quiz(questionsList);
