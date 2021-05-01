@@ -2,16 +2,6 @@
 
 <h2>BILLY TALENT</h2>
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-🔴Sounthida Kong (PAGE D'ACCUEIL)
-🔵Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
-https://codepen.io/jeremielevesque/pen/ZELvQMd bas
-https://codepen.io/jeremielevesque/pen/LYxeGBR iddle
-https://codepen.io/jeremielevesque/pen/BapJjqx haut
-=======
-=======
->>>>>>> 796d8a3ba7444660ee5c13f2d91e46d70248fe0d
 🔴 Sounthida Kong (PAGE D'ACCUEIL)
 </br>
 🔵 Jérémie Lévesque (PAGE DE DISCOGRAPHIE)
@@ -31,15 +21,9 @@ https://codepen.io/jeremielevesque/pen/BapJjqx haut
    </br>
   <span style="color:blue">🔵
     </br>
-    Idle:
+    Idle:https://codepen.io/jeremielevesque/pen/LYxeGBR
     </br>
-    Scroll-up:
+    Scroll-up: https://codepen.io/jeremielevesque/pen/BapJjqx
     </br>
-    Scroll-down: 
+    Scroll-down: https://codepen.io/jeremielevesque/pen/ZELvQMd
   </span>
-  
-  
-<<<<<<< HEAD
->>>>>>> 796d8a3ba7444660ee5c13f2d91e46d70248fe0d
-=======
->>>>>>> 796d8a3ba7444660ee5c13f2d91e46d70248fe0d
