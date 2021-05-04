@@ -1,20 +1,22 @@
+modal = document.querySelector(".modal-QUIZ-body");
+let animWrapper = document.querySelector(".anim-bonne-rep");
+let animationWrapper = document.querySelector('.animation');
 
-    modal = document.querySelector(".modal-QUIZ-body");
-    let animWrapper = document.querySelector(".anim-bonne-rep");
-    let animationWrapper = document.querySelector('.animation');
-
-let questionsList = fetch("https://billytalent.qc.lu/json")
+fetch("https://billytalent.qc.lu/billytalent-api/index.php/wp-json/wp/v2/posts")
 .then(result => result.json())
-.then(data => new Quiz(data.questions))
+.then(data => {
+  console.log(data);
+  new Quiz(data);
+})
 .catch(error => console.log('Une erreur est survenue'));
 
 class Quiz { 
 
-  constructor(questionsList) {
+  constructor(data) {
     
     this.index = 0; 
     this.score = 0;
-    this.questions = questionsList;
+    this.questions = data;
     
     this.questions.forEach((question, index) => {
       this.creerHTML(question, index);
@@ -34,13 +36,13 @@ class Quiz {
 
     this.strongQuestion = document.createElement("strong");
     this.br = document.createElement("br");
-    this.strongQuestion.innerText = question.q;
+    this.strongQuestion.innerText = question.acf.q;
     this.el.appendChild(this.strongQuestion);
     this.el.appendChild(this.br);
     
      //radios buttons
      
-    if(typeof question.o1 !== "undefined") {
+    if(typeof question.acf.o1 !== "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -49,14 +51,14 @@ class Quiz {
       this.el.appendChild(this.radio);
       
       this.label = document.createElement("label");
-      this.label.innerText = question.o1;
+      this.label.innerText = question.acf.o1;
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
       this.el.appendChild(this.radiobr);
     }
      
-    if(typeof question.o2 !== "undefined") {
+    if(typeof question.acf.o2 !== "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -65,7 +67,7 @@ class Quiz {
       this.el.appendChild(this.radio);      
       
       this.label = document.createElement("label");
-      this.label.innerText = question.o2;
+      this.label.innerText = question.acf.o2;
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
@@ -73,7 +75,7 @@ class Quiz {
     }
     
     
-    if(typeof question.o3 !== "undefined") {
+    if(typeof question.acf.o3 !== "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -82,7 +84,7 @@ class Quiz {
       this.el.appendChild(this.radio);
       
       this.label = document.createElement("label");
-      this.label.innerText = question.o3;
+      this.label.innerText = question.acf.o3;
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
@@ -90,7 +92,7 @@ class Quiz {
     }
      
     
-    if(typeof question.o4 !== "undefined") {
+    if(typeof question.acf.o4 !== "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -99,7 +101,7 @@ class Quiz {
       this.el.appendChild(this.radio);
       
       this.label = document.createElement("label");
-      this.label.innerText = question.o4;
+      this.label.innerText = question.acf.o4;
       this.el.appendChild(this.label);
       
       this.radiobr = document.createElement("br");
@@ -127,7 +129,7 @@ class Quiz {
       btnRadio.forEach((radioButton) => {
           radioButton.addEventListener("change", ()=> {
           
-            if (radioButton.value == this.questions[this.index].r) {
+            if (radioButton.value == this.questions[this.index].acf.r) {
               this.correct();            
                       
             }
