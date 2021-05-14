@@ -2,19 +2,334 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="main.css">
-        <script type="text/javascript" src="main.js"></script>
-        <script type="text/javascript" src="accueil.js"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+         <!-----------------------------GSAP PLUGINS---------------------------->
+
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ==" crossorigin="anonymous"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q==" crossorigin="anonymous"></script>
+
+        <!-----------------------------BOOTSTRAP------------------------------->
+        <link rel="stylesheet" href="styles/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="ttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/components/pagination/pagination.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+       
+
+        <!---------------------------SWIPPER PLUGIN----------------------------->
+
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         
-        <title>Title of the document</title>
+
+        <!------------------- LIEN DES TYPOGRAPHIES GOOGLE --------------------->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet"> 
+
+
+        <title>Billy Talent</title>
     </head>
 
     <body>
-    The content of the document......
+        
+        <!-----------------------------HEROS------------------------------------>
+        <header class="header-accueil">
+           <picture>
+                <source srcset="img/accueil_landscape.jpg" media="(orientation:landscape)">
+                <img class="img-accueil" src="img/accueil_mobile.jpg">
+            </picture>
+            <div class="contrast-accueil"></div>
+            <div class="container container-accueil d-flex align-items-center">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-6 col-xxl-4">
+                        <h1 class="title-accueil">Billy Talent</h1>
+                        <p class="description-accueil">Billy Talent est un groupe de <i>punk rock</i> canadien, originaire de Mississauga, en Ontario. Il est formé en 1993 avec <b>Benjamin Kowalewicz</b> au chant, <b>Ian D'Sa</b> à la guitare, <b>Jon Gallant</b> à la basse, <b>Aaron Solowoniuk</b> à la batterie et <b>Jordan Hastings</b>. </p>
+                        <a href="#main"><button type="button" class="btn-accueil">En savoir plus</button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-----------------------------NAVBAR------------------------------------>
+
+        <nav class="navbar sticky-top navbar-dark navbar-expand-sm">
+            <div class="container-fluid d-flex flex-sm-row-reverse">
+                    <!--MENU HAMBURGER-->
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!--NAVIGATION-->
+                    <div id="mainNav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link"><span class="now-page">Accueil</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="discographie.html" class="nav-link">Discographie</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#modalquiz" data-bs-toggle="modal" data-bs-target="#ModalQUIZ" class="quiz nav-link">Quiz</span></a>
+                        </li>
+                        </ul>
+                
+                    </div>
+                    <!--BRANDING-->
+                    <div class="logo">
+                        <a class="navbar-brand" href="index.html">BILLY TALENT</a>
+                    </div>
+            </div>
+        </nav>
+
+        <!----------------------------MAIN-------------------------------------->
+        
+        <main id="main">
+            <div class="container-fluid">
+                <div class="row">                    
+                    <div class="barre-laterale-accueil col-md-3 d-none d-md-block">
+                        <div class="emo-animation"></div>
+                    </div>
+        <!----------------------------CONTENU----------------------------->
+                   <div class="main-accueil col-12 col-md-9">
+                        <section class="section-accueil section-acc">
+                            <div class="row justify-content-center">
+                                <div class="col-12">
+                                    <h2 class="accueil-title">MEMBRES DU GROUPE</h2>
+                                </div>
+
+                                <div class="col-12 row justify-content-center accueil-content">
+                                    
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/benjamin_kowalewicz.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Benjamin Kowalewicz</h3>
+                                                <div class="role">Chanteur</div>
+                                                <div class="card-description">Benjamin Kowalewicz est un chanteur de rock canadien né le 16 décembre 1975 à Montréal.
+                                                    Autrefois batteur dans un groupe précédant, il est maintenant le chanteur du groupe Billy Talent.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://fr.wikipedia.org/wiki/Benjamin_Kowalewicz"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/ian_dsa.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Ian D'Sa</h3>
+                                                <div class="role">Guitariste principal</div>
+                                                <div class="card-description">D'origine indienne (Goa), né en Angleterre le 30 octobre 1975, Ian a grandi en Ontario.
+                                                    Ayant appris la guitare à 13 ans, il est maintenant le guitariste principal de Billy Talent.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://fr.wikipedia.org/wiki/Ian_D%27Sa"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/jonathan_gallant.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Jon Gallant</h3>
+                                                <div class="role">Bassiste</div>
+                                                <div class="card-description">Jonathan Gallant (né le 23 juillet 19751) est le bassiste du groupe Billy Talent. Jon a grandi à Streetsville, Ontario.
+                                                    Il a commencé à jouer de la guitare basse à douze ans.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://fr.wikipedia.org/wiki/Jonathan_Gallant"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/aaron_solowoniuk.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Aaron Solowoniuk</h3>
+                                                <div class="role">Batteur</div>
+                                                <div class="card-description">Aaron Solowoniuk, d'ascendance polonaise, est né le 21 novembre 1974 et a grandi à Streetsville, Ontario.
+                                                    Il est le batteur de Billy Talent.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://en.wikipedia.org/wiki/Aaron_Solowoniuk"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12 col-sm-6">
+                                        <div class="card">
+                                            <img src="img/jordan_hastings.jpg" class="card-img-top">
+                                            <div class="card-body">
+                                                <h3 class="card-title">Jordan Hastings</h3>
+                                                <div class="role">Batteur secondaire</div>
+                                                <div class="card-description">Jordan "Ratbeard" Hastings (né le 15 mars 1982) est un musicien canadien né à Hamilton, en Ontario.
+                                                    En janvier 2016, Hastings a commencé à remplacer Aaron Solowoniuk dans le groupe Billy Talent, après que Solowoniuk eut une rechute de sclérose en plaques. 
+                                                    Il a enregistré la batterie pour leur dernier album Afraid of Heights, sorti en juillet 2016.
+                                                </div>
+                                            </div>
+                                            <div class="card-footer">
+                                                <a href="https://en.wikipedia.org/wiki/Jordan_Hastings"><button type="button" class="btn-card">En savoir plus</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!---------VIDEO----------->
+
+                        <section class="section-video section-acc">
+                            <div class="container">
+                                <div class="col-12">
+                                    <h2 class="accueil-title">VIDÉO</h2>
+                                </div>
+                                <div class="col-12 accueil-content">
+                                    <div class="wrapper-video">
+                                        <iframe class="video" src="https://www.youtube.com/embed/_zssP6w0VWQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                        <!--------IMAGES PROMOTIONNELLES------>
+
+                        <section class="section-promo section-acc">
+                            <div class="container">
+                                <div class="col-12">
+                                    <h2 class="accueil-title">IMAGES PROMOTIONELLES</h2>
+                                </div>
+                                <div class="col-12 accueil-content">
+                                    <div class="swiper-container-accueil">
+                                        
+                                        <div class="swiper-wrapper">
+                                        
+                                        <div class="swiper-slide swiper-accueil"><img src="img/accueil-slide-01.jpg"></div>
+                                        <div class="swiper-slide swiper-accueil"><img src="img/accueil-slide-02.jpg"></div>
+                                        <div class="swiper-slide swiper-accueil"><img src="img/accueil-slide-03.jpg"></div>
+                                        <div class="swiper-slide swiper-accueil"><img src="img/accueil-slide-04.jpg"></div>
+                                        <div class="swiper-slide swiper-accueil"><img src="img/accueil-slide-05.jpg"></div>
+                                        
+                                        </div>
+                                        
+                                        <div class="swiper-pagination-accueil"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!--pied de page-->
+
+        <footer>
+            <div class="row d-flex">
+                <div class="col-12 col-lg-6 text-center text-lg-start">
+                    <p class="nom-prenom text-gauche text-light" data-bs-toggle="modal" data-bs-target="#sounthi">Sounthida Kong </p>
+                    <p class="nom-prenom text-gauche text-light" data-bs-toggle="modal" data-bs-target="#jeremie">Jérémie Lévesque </p>
+                </div>
+                <div class=" col-12 col-lg-6 text-center text-lg-end">
+                    <p class="texte-droite text-light">https://github.com/jeremieLevesque/Sounthida-Jeremie-megazord </p>
+                    <p class="texte-droite text-light">©2021</p>
+                </div>                   
+            </div>
+        </footer>
+            
+
+    <!---------pop-ups------->
+    
+    <div class="modal fade" id="sounthi" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Sounthida Kong</h4>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/aaron_solowoniuk.jpg" class="modal-img">
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="jeremie" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Jérémie Lévesque</h4>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/aaron_solowoniuk.jpg" class="modal-img">
+            </div>
+          </div>
+        </div>
+    </div>
+     <!---------quiz------->
+ <div class="modal fade" id="ModalQUIZ" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title border-0 quizTitle">BILLY QUIZ</h5>
+          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+        </div>
+        <div class="modal-body modal-QUIZ-body">
+            <div class="d-flex justify-content-center align-items-center">
+                <!----ANIMATION BONNE REPONSE-->
+                <div class="anim-bonne-rep">            
+                    <div class="rond-vert">
+                    <img src="https://i.imgur.com/qAjdWWY.png">
+                    </div>
+                    <div class="punk-bon">
+                    <img src="https://imgur.com/T1lJpBf.png">
+                    </div>
+                    <div class="yeah">
+                    YEAH
+                    </div>            
+                </div>
+                <!---ANIMATION MAUVAISE REPONSE-->
+                <div class="animation-disparition">
+                    <div class="animation">                  
+                      <div class="cercle">
+                        <img src="https://imgur.com/7VZfKrQ.png">
+                      </div>
+                      <div class="perso">
+                         <img src="https://imgur.com/EoDF4VW.png">
+                      </div>                   
+                    </div>
+                </div>
+            </div>         
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  
+  <!--Animation mauvaise reponse-->
+   
+  
+  <!--pied de page fin-->
+  <script type="text/javascript" src="Scripts/accueil.js"></script>
+  <script src="Scripts/main.js"></script>
+    
     </body>
+
+    
 
 </html> 
 
