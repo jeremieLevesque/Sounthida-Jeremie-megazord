@@ -42,7 +42,7 @@ class Quiz {
     
      //radios buttons
      
-    if(typeof question.acf.o1 !== "") {
+    if(question.acf.o1 != "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -58,7 +58,7 @@ class Quiz {
       this.el.appendChild(this.radiobr);
     }
      
-    if(typeof question.acf.o2 !== "") {
+    if(question.acf.o2 != "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -74,8 +74,7 @@ class Quiz {
       this.el.appendChild(this.radiobr);
     }
     
-    
-    if(typeof question.acf.o3 !== "") {
+    if(question.acf.o3 != "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
@@ -92,7 +91,7 @@ class Quiz {
     }
      
     
-    if(typeof question.acf.o4 !== "") {
+    if(question.acf.o4 != "") {
       
       this.radio = document.createElement("input");
       this.radio.setAttribute("type", "radio");
